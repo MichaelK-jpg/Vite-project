@@ -4,9 +4,14 @@ import viteLogo from '/vite.svg'
 import './'
 import { FAJNA_ZMIENNA } from '../fajny'
 import { Button } from '../Button'
+import { Box } from '../Box'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [secondCount, setSecondCount] = useState(0)
+  const handleClick = () => {
+    setSecondCount(secondCount + 1)
+  }; 
 
   return (
     <>
@@ -24,6 +29,7 @@ function App() {
           count is {count}
         </button>
         <Button label="Test" />
+        <Box count={count} onClick={handleClick}/>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
