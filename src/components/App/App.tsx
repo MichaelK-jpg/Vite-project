@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from '../../assets/react.svg'
 import viteLogo from '/vite.svg'
 import './'
-import { FAJNA_ZMIENNA } from '../fajny'
+import { FAJNA_ZMIENNA } from '@components/fajny'
 import { Button } from '../Button'
 
 function App() {
